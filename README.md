@@ -1,8 +1,7 @@
 = Formål: at kunne benytte git til versionsstyring og deling af filer 
 
 
-= Forudsætninger
-Installer chocolatey
+= Forberedelser 
 
 == Installer *chocolatey* og *git* 
 https://chocolatey.org/install
@@ -71,10 +70,23 @@ Start-SshAgent -Quiet
 ```
 
 
-== Hvad indeholder et git repository
+= Hvad indeholder et git repository
 
 - ingenting
 - men der ligger een folder `.git`, som man absolut aldrig skal røre.
 - og det bør indeholde
 -- .gitignore
 -- README.md
+
+= Fundamentale kommandoer
+
+== add
+== checkout
+== commit 
+== rm 
+
+= Merge og rebase
+
+
+
+
