@@ -69,6 +69,23 @@ Set-Alias ssh-add "$env:ProgramFiles\git\usr\bin\ssh-add.exe"
 Start-SshAgent -Quiet
 ```
 
+For at det fungerer skal den offentlige nøgle kopieres til git.rootdom.dk
+
+
+
+1. Kopier *hele* indholdet af "Public key for pasting into OpenSSH authorized_keys file"
+2. Gå til https://git.rootdom.dk/settings/keys
+2. Log ind
+3. "New SSH key"
+4. Angiv dit maskinnavn i "Title"
+5. Paste fra putty-gen til feltet "Key"
+6. Gem.
+
+
+
+== Hvis du ikke vil overskrive din nøgle fil. 
+Generer en nøgle som beskrevet ovenfor
+
 
 = Hvad indeholder et git repository
 
