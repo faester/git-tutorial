@@ -96,7 +96,7 @@ Host git-rootdom git.rootdom.dk
 	IdentityFile ~/.ssh/git.rootdom.dk
 	User git 
 ```
-
+Skal tilføjes ssh-agent med `ssh-add ~/.ssh/git.rootdom.dk`
 
 = Hvad indeholder et git repository
 
