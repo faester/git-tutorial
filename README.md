@@ -43,6 +43,11 @@ putty install -y putty.install
 Puttygen burde nu kunne startes fra menuen. Hvis det driller ligger den her: 
 ```"C:\Program Files\PuTTY\puttygen.exe" ```
 
+For at lave en nøgle skal man bevæge musen lidt rundt. Når filen er lavet skal man sætte et password for nøglen. Brug "Conversion" -> "Export OpenSSH key". 
+
+
+
+
 
 == Hvad indeholder et git repository
 
