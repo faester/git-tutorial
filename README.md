@@ -1,9 +1,9 @@
-= Formål: at kunne benytte git til versionsstyring og deling af filer 
+# Formål: at kunne benytte git til versionsstyring og deling af filer 
 
 
-= Forberedelser 
+# Forberedelser 
 
-== Installer *chocolatey* og *git* 
+## Installer *chocolatey* og *git* 
 https://chocolatey.org/install
 
 Installer *chocolatey* fra en _eleveret_ powershell: 
@@ -21,7 +21,7 @@ Da vi skal arbejde med powershell er det også en god ide at installere posh-git
 choco install -y poshgit
 ```
 
-== Sæt et brugernavn
+## Sæt et brugernavn
 Der er faktisk valgfrihed på alle hylder, men det er nok mest hensigtsmæssigt du vælger noget der identificerer dig selv, og ikke din kollega. Sikkerhedsmodellen er anderledes i git end eksempelvis svn. Mere om det senere, men lad os lige nu antage vi opfører os ordentligt. 
 
 ```
@@ -37,7 +37,7 @@ git config --global --edit
 
 Vi antager i det følgende, at repositories ligger under `C:\workdirs`. Det er ingen forudsætning, men enkelt ift diverse eksempler. 
 
-== Forbind til git.rootdom.dk
+## Forbind til git.rootdom.dk
 Skal man deles om et git-repository - og samarbejde er jo en væsentlig del af formålet med git - skal man have autentificeret sig over for git-serveren. I vores tilfælde er det `git.rootdom.dk`. 
 
 Git bruger normalt ikke brugernavne og passwords, men public/private keys. Dvs at det er dine forskellige laptops, der for lov til at lokke ind *som dig* mod git-serveren. 
@@ -84,7 +84,7 @@ For at det fungerer skal den offentlige nøgle kopieres til git.rootdom.dk
 
 
 
-== Hvis du ikke vil overskrive din nøgle fil. 
+## Hvis du ikke vil overskrive din nøgle fil. 
 Generer en nøgle som beskrevet ovenfor
 Kopier den offentlige nøgle som beskrevet oven for
 Kopier den *private* nøgle til ~/.ssh/git.rootdom.dk 
@@ -98,7 +98,7 @@ Host git-rootdom git.rootdom.dk
 ```
 Skal tilføjes ssh-agent med `ssh-add ~/.ssh/git.rootdom.dk`
 
-= Hvad indeholder et git repository
+# Hvad indeholder et git repository
 
 - ingenting
 - men der ligger een folder `.git`, som man absolut aldrig skal røre.
@@ -106,14 +106,14 @@ Skal tilføjes ssh-agent med `ssh-add ~/.ssh/git.rootdom.dk`
 -- .gitignore
 -- README.md
 
-= Fundamentale kommandoer
+# Fundamentale kommandoer
 
-== add
-== checkout
-== commit 
-== rm 
+## add
+## checkout
+## commit 
+## rm 
 
-= Merge og rebase
+# Merge og rebase
 
 
 
