@@ -37,6 +37,7 @@ git config --global --edit
 
 Vi antager i det følgende, at repositories ligger under `C:\workdirs`. Det er ingen forudsætning, men enkelt ift diverse eksempler. 
 
+# Arbejde med remotes
 ## Forbind til git.rootdom.dk
 Skal man deles om et git-repository - og samarbejde er jo en væsentlig del af formålet med git - skal man have autentificeret sig over for git-serveren. I vores tilfælde er det `git.rootdom.dk`. 
 
