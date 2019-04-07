@@ -85,6 +85,16 @@ For at det fungerer skal den offentlige nøgle kopieres til git.rootdom.dk
 
 == Hvis du ikke vil overskrive din nøgle fil. 
 Generer en nøgle som beskrevet ovenfor
+Kopier den offentlige nøgle som beskrevet oven for
+Kopier den *private* nøgle til ~/.ssh/git.rootdom.dk 
+Ret/opret filen `~/.ssh/config` så den indeholder 
+
+```
+Host git-rootdom git.rootdom.dk
+	HostName git.rootdom.dk
+	IdentityFile ~/.ssh/git.rootdom.dk
+	User git 
+```
 
 
 = Hvad indeholder et git repository
