@@ -37,17 +37,6 @@ git config --global --edit
 
 Vi antager i det følgende, at repositories ligger under `C:\workdirs`. Det er ingen forudsætning, men enkelt ift diverse eksempler. 
 
-For at [arbejde med remotes](./remotes.md)
+For at [arbejde med remotes](./remotes.md) skal der en del besværgelser til, men heldigvis kun første gang. Gem det til senere. 
 
-# Fundamentale kommandoer
-
-## add
-## checkout
-## commit 
-## rm 
-
-# Merge og rebase
-
-
-
-
+Vi er nu klar til at [arbejde med basale git-kommandoer](./basics.md)
