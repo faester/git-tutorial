@@ -45,8 +45,18 @@ Puttygen burde nu kunne startes fra menuen. Hvis det driller ligger den her:
 
 For at lave en nøgle skal man bevæge musen lidt rundt. Når filen er lavet skal man sætte et password for nøglen. Brug "Conversion" -> "Export OpenSSH key". 
 
+Kopier nu den eksporterede fil til din lokale .ssh-folder
+```
+cp <eksporteret-fil> ~\.ssh\id_rsa
+```
 
+Endelig skal man gennemføre nedenstående for at slippe for at tampe sin key-passphrase ind konstant
 
+```
+Set-Alias ssh-agent "$env:ProgramFiles\git\usr\bin\ssh-agent.exe"
+Set-Alias ssh-add "$env:ProgramFiles\git\usr\bin\ssh-add.exe"
+Start-SshAgent -Quiet
+```
 
 
 == Hvad indeholder et git repository
