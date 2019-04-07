@@ -68,6 +68,7 @@ Set-Alias ssh-agent "$env:ProgramFiles\git\usr\bin\ssh-agent.exe"
 Set-Alias ssh-add "$env:ProgramFiles\git\usr\bin\ssh-add.exe"
 Start-SshAgent -Quiet
 ```
+(Kan kopieres til $profile) 
 
 For at det fungerer skal den offentlige nøgle kopieres til git.rootdom.dk
 
