@@ -22,6 +22,18 @@ Da vi skal arbejde med powershell er det også en god ide at installere posh-git
 choco install -y poshgit
 ```
 
+== Sæt et brugernavn
+Der er faktisk valgfrihed på alle hylder, men det er nok mest hensigtsmæssigt du vælger noget der identificerer dig selv, og ikke din kollega. Sikkerhedsmodellen er anderledes i git end eksempelvis svn. Mere om det senere, men lad os lige nu antage vi opfører os ordentligt. 
+
+```
+ git config --global user.name "Jens Hansen"
+ git config --global user.email "jens.hansen@jppol.dk"
+```
+Alternativt kan du bede om at rette direkte i gits configurationsfil med 
+```
+git config --global --edit
+```
+
 *Du kan nu arbejde med git lokalt*
 
 Vi antager i det følgende, at repositories ligger under `C:\workdirs`. Det er ingen forudsætning, men enkelt ift diverse eksempler. 
