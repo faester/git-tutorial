@@ -1,4 +1,6 @@
 # Basisviden
+Vi starter med en bunke definitioner. Og lige om lidt prøver vi at illustrere med noget praksis. 
+
 ## Distribuerede repositories
 Git er distribueret. Det vil sige, at man arbejder med en fuld kopi af et repository. I princippet er den lokale kopi man har liggende på sin laptop ikke forskellige fra det der ligger på en server.
 
@@ -13,31 +15,38 @@ Som omtalt ovenfor er et git repository en række ændringer, der er kædet samm
 
 Hver perle (delta, eller changesæt) repræsenterer et `commit`. 
 
+                              [head]
+                                |
+                             [ændring2]
+                                |
+                             [ændring1]
+                                |
+                              [tom]
+
+
 Man kan også have flere perlekæder, der er bundet sammen i specifikke knuder. Det kan være smart, fordi man på den måde har en genvej til en specifik tilstand. 
 
 ## Branches - pegepinde
 I git kan man som omtalt lave en såkaldt `branch`. Det er i praksis blot et navngivet "bogmærke", der peger på en bestemt ændring -- et specifikt `commit`. 
 
-                             [head]
+                             [head]-master    [parallelunivers]-dev
+                                |                    |
+                             [ændring2]        [eksperiment2]
+                                |                    |
+                             [ændring1]--------[eksperiment1]
                                 |
-                             [ændring2]
+                            [ændring0] 
                                 |
-                             [ændring1]
+                              [tom]
 
-# Fundamentale kommandoer
+Branching er enormt smart, hvis flere skal arbejde sammen, fordi den enes ændringer (og fejltagelser) ikke berører den andens arbejde. 
 
-## clone
-Bruges til at lave en lokal kopi af et repository. Med mindre du starter med `init` er dette måden at starte med at arbejde i et git repository. 
-## init
-Start et nyt repository. Alle filer under det aktuelle katalog bliver nu styret vha git.
-## checkout
-## add
-## commit 
-## rm 
-## log 
+Men branches er også den primære kilde til frustrationer og `merge konflikter`. I ovenstående tænkte eksempel kunne man forstille sig, at den person der arbejder i stien `[head]` retter i en fil, der også modificeres i `[parallelunivers]`. Det vil gå fint, men på et tidspunkt skal ændringerne i de to branches samles til en fælles virkelighed igen, og på det tidspunkt kan man få en del problemer. 
 
-# Merge og rebase
+Generelt er kortlevede branches en god ide. Branches der lever mere end et par dage er i reglen altid en kilde til problemer. 
 
+Det er normal praksis at man har een branch, der afspejler sin seneste release, og løbende arbejder i en anden branch. Man committer *aldrig* direkte til master. Men lige nu skal vi ikke dvæle ved den slags detaljer. 
 
+[Lad os se nogle eksempler](lab1.md)
 
-
+Der er [en oversigt over basiskommandoer her](basic-commands.md)
