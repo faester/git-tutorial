@@ -23,7 +23,7 @@ Kopier nu den eksporterede fil til din lokale .ssh-folder
 cp <eksporteret-fil> ~\.ssh\id_rsa
 ```
 
-Endelig skal man gennemføre nedenstående for at slippe for at tampe sin key-passphrase ind konstant
+Endelig skal man gennemføre nedenstående for at slippe for forberede systemet, så man ikek skal tampe sin key-passphrase ind konstant
 
 ```
 Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
@@ -32,6 +32,8 @@ Set-Alias ssh-add "$env:ProgramFiles\git\usr\bin\ssh-add.exe"
 Start-SshAgent -Quiet
 ```
 (Kan kopieres til $profile) 
+
+Den konkrete nøgle skal dog også tilføjes med `ssh-add` når den er generet. Det kan gøres i profilenfilen overnfor, eller ad-hoc på kommandolinien. 
 
 For at det fungerer skal den offentlige nøgle kopieres til git.rootdom.dk
 
