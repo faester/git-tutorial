@@ -6,7 +6,17 @@ Når man skal dele sit arbejde synkroniserer man sine egne ændringer, med en an
 
 Git er smart nok til kun at sende ændringerne frem og tilbage. 
 
-<details><summary>Normalt synkroniserer man med en kopi hos [github](https://github.dom) eller vores lokale betalte udgave på [https://git.rootdom.dk](https://git.rootdom.dk).</summary>Men man kan også dele filer via et netværksshare. Repositories er ikke bundet til  en specifik server, så man kan godt dele sine ændringer med både github og vores lokale repository. </details>
+Normalt synkroniserer man med en kopi hos [github](https://github.dom) eller vores lokale betalte udgave på [https://git.rootdom.dk](https://git.rootdom.dk). Men man kan også dele filer via et netværksshare. Repositories er ikke bundet til  en specifik server, så man kan godt dele sine ændringer med både github og vores lokale repository.
+
+## Changes - perlekæder
+Som omtalt ovenfor er et git repository en række ændringer, der er kædet sammen. Man kan næsten forestille sig en perlekæde, hvor hver perle er en samlet beskrivelse af hvilke filer der er ændret "siden sidst". 
+
+Hver perle (delta, eller changesæt) repræsenterer et `commit`. 
+
+Man kan også have flere perlekæder, der er bundet sammen i specifikke knuder. Det kan være smart, fordi man på den måde har en genvej til en specifik tilstand. 
+
+## Branches - pegepinde
+I git kan man som omtalt lave en såkaldt `branch`. Det er i praksis blot et navngivet "bogmærke", der peger på en bestemt ændring -- et specifikt `commit`. 
 
 # Fundamentale kommandoer
 
