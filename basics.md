@@ -47,6 +47,20 @@ Generelt er kortlevede branches en god ide. Branches der lever mere end et par d
 
 Det er normal praksis at man har een branch, der afspejler sin seneste release, og løbende arbejder i en anden branch. Man committer *aldrig* direkte til master. Men lige nu skal vi ikke dvæle ved den slags detaljer. 
 
-[Lad os se nogle eksempler](lab1.md)
+# Agenda - Lokale ændringer, individuelt brug af git 
+## [Lav et repository og tilføj en fil](lab1.md)
+## [Ret i filer, hvis ændringer](lab2.md)
+## [Fortryd rettelser](lab3.md)
+## [Branches](lab4.md)
+## [Konflikter](lab5.md)
+## [Indbyggede værktøjer](lab6.md)
+
+
+# Dag 2 - samarbejde
+
+## Branching-strategier
+## Hvorfor bruger man webudgaver af git?
+## Hvad er et pull-request
+## Låsning af branches
 
 Der er [en oversigt over basiskommandoer her](basic-commands.md)

@@ -1,4 +1,4 @@
-# Lab 2 - Ret i filer, kig på historikken
+# Lab 2 - Ret i filer, vis ændringer 
 Vi har nu et git repository og en enkelt fil. 
 
 Lad os prøve at rette i denne fil. 
@@ -139,13 +139,13 @@ git diff head
 ```
 der gerne skulle vise ændringer i begge de tilføjede linier. 
 
-> Commit rettelserne 
+> Tilføj alle rettelserne og commit. 
 
 ```
+git add mhf.txt
 git commit -m "Min adresse"
 ```
 
 
-
-[Der findes også medfølgende GUI-baserede værktøjer. De er et fint supplement!](lab3.md)
-[Tilbage til lab1](lab1.md)
+[Næste øvelse](lab3.md)
+[Tilbage til oversigten](basics.md)

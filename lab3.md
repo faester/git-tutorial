@@ -1,2 +1,5 @@
-# Lab 3 - "git gui" og "gitk"
-Det kan virke lidt 
+# Lab 3 - Fortryd rettelser
+
+
+[Næste øvelse](lab4.md)
+[Indeks](basics.md)
