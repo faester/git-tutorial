@@ -21,4 +21,10 @@ Eller rettere: Vores rettelser er gemt inde i `.git`-folderen, men kigger vi dir
                     | 
                  [init]
 
+
+De to rettelser hvor vi tilføjede telefonnummer og adresse er simpelt hen spolet tilbage. Vores `head` peger nu på en anden tilstand i versionshistorien. 
 </details>
+
+Lad os gøre livet surt for os selv og tilføje nogle rettelser, som vi ved kommer til at skabe konflikter. 
+
+[Næste øvelse handler nemlig om at løse konflikter i git](lab5.md)
