@@ -40,6 +40,19 @@ Det helt korte svar er, at nu har vi et git repository som vi kan tilføje filer
 </details>
 
 > Opret en fil i det nye katalog. Filen skal navngives som dine initialer med endelsen `.txt`. Inde i filen skal du skrive dit fulde navn. 
-Brug notepad, 
+Brug notepad, powershell eller bash. Hovedsagen er der efterfølgende skal ligge en enkelt fil som dit navn står i. 
+
+```powershell
+"Morten Hjorth Fæster"|out-file -Encoding utf8 -FilePath mhf.txt -Append
+```
+<details><summary>Filen ligger nu i kataloget, men den er stadig ikke under versionskontrol</summary>
+
+Bruger man posh-git kan man også se at prompten har ændret sig, så der nu står noget i stil med 
+```
+C:\workdirs\git-tutorial [master ↑1 +1 ~0 -0 !]>
+```
+"master" indikerer at vi arbejder direkte i master - som den opmærksomme nok husker vi ikke burde - "↑1" fortæller at vi har en rettelse lokalt, der ikke er synkroniseret med vores standard serverudgave, "+1" betyder at der er en ny fil. 
+</details>
+ 
 
 
