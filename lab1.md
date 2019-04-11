@@ -73,7 +73,9 @@ Man kan rette flere gange i den samme fil uden at git "gemmer" ændringen. Det s
 git commit -m "Mit navn er nu mejslet i git."
 ```
 
+Det er helt ok hvis *wuhuu*-følelsen lader vente på sig, men nu har vi faktisk opnået både at have lavet et git-repository samt at have lagt en enkelt fil med en enkelt rettelse ind i repositoriet. 
 
+[Vi skal nu til at se lidt på hvad man kan bruge det til](lab2.md)
 
 
 
