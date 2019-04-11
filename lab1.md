@@ -53,6 +53,27 @@ C:\workdirs\git-tutorial [master ↑1 +1 ~0 -0 !]>
 ```
 "master" indikerer at vi arbejder direkte i master - som den opmærksomme nok husker vi ikke burde - "↑1" fortæller at vi har en rettelse lokalt, der ikke er synkroniseret med vores standard serverudgave, "+1" betyder at der er en ny fil. 
 </details>
- 
+
+<details><summary>
+Man skal for hver enkelt fil fortælle git, at man ønsker at filen skal versioneres. Derfor skal man køre kommandoen ```git add``` efterfulgt af filnavnet.  
+</summary>
+Det kan måske virke lidt besværligt at hver enkelt fil skal tilføjes manuelt, men det giver mening på den måde, at man ikke ønsker at generede filer (kompileret kildekode og lignende) samt backup-filer ligger under versionskontrol. Og man vænner sig hurtigt til det. 
+</details>
+
+I mit tilfælde bliver det til 
+```
+git add mhf.txt
+```
+
+Git ved nu at vi ønsker at den pågældende fil skal versionsstyres. Men da den ikke er committed er dens nuværende indhold ikke gemt i git. 
+
+Man kan rette flere gange i den samme fil uden at git "gemmer" ændringen. Det sker først, når vi bruger kommandoen ```git commit```. Lad os committe filen. Man *skal* altid skrive en kommentar når man committer, og man *bør* skrive noget der giver mening. Væn jer til det. 
+
+```
+git commit -m "Mit navn er nu mejslet i git."
+```
+
+
+
 
 
