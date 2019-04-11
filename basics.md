@@ -18,6 +18,12 @@ Man kan også have flere perlekæder, der er bundet sammen i specifikke knuder. 
 ## Branches - pegepinde
 I git kan man som omtalt lave en såkaldt `branch`. Det er i praksis blot et navngivet "bogmærke", der peger på en bestemt ændring -- et specifikt `commit`. 
 
+                             [head]
+                                |
+                             [ændring2]
+                                |
+                             [ændring1]
+
 # Fundamentale kommandoer
 
 ## clone
