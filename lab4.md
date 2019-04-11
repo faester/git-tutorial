@@ -27,5 +27,8 @@ De to rettelser hvor vi tilføjede telefonnummer og adresse er simpelt hen spole
 
 Lad os gøre livet surt for os selv og tilføje nogle rettelser, som vi ved kommer til at skabe konflikter. 
 
+## Logning
+
+
 [Næste øvelse handler nemlig om at løse konflikter i git](lab5.md)
 [Tilbage til oversigten](basics.md)

@@ -146,6 +146,56 @@ git add mhf.txt
 git commit -m "Min adresse"
 ```
 
+## Log
+Man kan til enhver tid få en log over alle de ændringer, der findes på den branch man aktuelt står på. Det gør man simpelt hen med `git log`. 
+
+Output ligner nedenstående: 
+
+    commit 1ca57287ca2f5d3621060c5a264d070aebbd333a (HEAD -> lab2)
+    Author: Morten F<C3><A6>ster <morten.faester@jppol.dk>
+    Date:   Fri Apr 12 01:24:51 2019 +0200
+    
+        Min adresse
+    
+    commit 717b3ce64422d2c5e5955d362003105376d91dc2
+    Author: Morten F<C3><A6>ster <morten.faester@jppol.dk>
+    Date:   Fri Apr 12 01:24:23 2019 +0200
+    
+        Mit telefonnummer
+    
+    commit 4369ef49fd6c0d63dcaf663eafb7db898f9b050c (master)
+    Author: Morten F<C3><A6>ster <morten.faester@jppol.dk>
+    Date:   Fri Apr 12 01:23:55 2019 +0200
+    
+        Mit navn er nu mejslet i git.
+    
+`git status` og `git diff` er godt til at vise noget om hvad man har liggende af ændringer lige nu, men loggen kan bruges til at se hvilke ting der er sket over længere tid. 
+
+Det er *rigtig* meget enklere hvis commit-beskederne er meningsfulde, men faktisk der er faktisk rigtig meget information i loggen. Ud over tidsrum - arbejder jeg ikke sent? - kan man også se *hvem* der har lavet hvilke ændringer. Men ikke mindst er checksummen faktisk nyttig, da man kan bruge den til at skaffe sig detaljer. Og så får `diff` en lille revival. 
+
+> Sammenlign commits med git diff 
+ved at sætte to punktummer mellem to commit-checksums, kan man få vist ændringer tilbage i tiden. De to commits behøver ikke følge hinanden. Lad os sammenligne "telefon"-committed med "adresse": 
+```
+git diff 717b3ce64422d2c5e5955d362003105376d91dc2..1ca57287ca2f5d3621060c5a264d070aebbd333a
+```
+Vi får output 
+
+    diff --git a/mhf.txt b/mhf.txt
+    index 7123acf..2c61875 100644
+    --- a/mhf.txt
+    +++ b/mhf.txt
+    @@ -1,2 +1,4 @@
+     <EF><BB><BF>Morten Hjorth F<C3><A6>ster
+     29641657
+    +Struenseegade 53, 3
+    +2200 Kbh N
+    
+
+Man kan også lave et patch mellem HEAD og en tidligere version 
+```
+git format-patch -1 717b3ce64422d2c5e5955d3
+```
+
 
 [Næste øvelse](lab3.md)
 [Tilbage til oversigten](basics.md)
