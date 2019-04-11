@@ -51,7 +51,6 @@ Konkret kan man tilføje nedenstående linie til `.gitattributes` for at sikre a
 ```
 </details>
 
-    C:\workdirs\git-tutorial [lab2 +0 ~1 -0 !]> git diff
     diff --git a/mhf.txt b/mhf.txt
     index b375a8a..7123acf 100644
     --- a/mhf.txt
