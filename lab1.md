@@ -67,7 +67,7 @@ git add mhf.txt
 
 Git ved nu at vi ønsker at den pågældende fil skal versionsstyres. Men da den ikke er committed er dens nuværende indhold ikke gemt i git. 
 
-Man kan rette flere gange i den samme fil uden at git "gemmer" ændringen. Det sker først, når vi bruger kommandoen ```git commit```. Lad os committe filen. Man *skal* altid skrive en kommentar når man committer, og man *bør* skrive noget der giver mening. Væn jer til det. 
+Man kan rette flere gange i den samme fil uden at git "gemmer" ændringen. Det sker først, når vi bruger kommandoen ```git commit```. Lad os committe filen. Man *skal* altid skrive en kommentar når man committer, og man *bør* skrive noget der giver mening. Væn jer til det.
 
 ```
 git commit -m "Mit navn er nu mejslet i git."
