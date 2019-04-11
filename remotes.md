@@ -11,7 +11,7 @@ putty-gen er en mulighed, og det er ret simpelt på Windows.
 Hvis du ikke allerede har installeret putty, så kan chocolatey hjælpe: 
 
 ```
-putty install -y putty.install
+choco install -y putty.install
 ```
 Puttygen burde nu kunne startes fra menuen. Hvis det driller ligger den her: 
 ```"C:\Program Files\PuTTY\puttygen.exe" ```
@@ -26,6 +26,7 @@ cp <eksporteret-fil> ~\.ssh\id_rsa
 Endelig skal man gennemføre nedenstående for at slippe for at tampe sin key-passphrase ind konstant
 
 ```
+Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
 Set-Alias ssh-agent "$env:ProgramFiles\git\usr\bin\ssh-agent.exe"
 Set-Alias ssh-add "$env:ProgramFiles\git\usr\bin\ssh-add.exe"
 Start-SshAgent -Quiet
