@@ -1,4 +1,4 @@
-# Første øvelse
+# Første øvelse - lav et repository og tilføj en fil
 Lige en bemærkning: *Git er svært!* - Man kan alt mulig smart, og 99% af tiden er det let og intuitivt. Men den sidste procent er nogen gange frustrerende. Vi prøver at være grundige med forklaringerne fra starten; det hjælper forhåbentlig senere :)
 
 **Lad være med at bruge andet en kommandoprompten til disse øvelser** - og brug gerne så primitive værktøjer som muligt. Der er mange tools til at styre git, men de fleste af dem gør det svært at forstå hvad der sker i repositoriet. 
