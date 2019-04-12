@@ -23,6 +23,88 @@ git checkout -b lab5
                  [init]
 
 
+## Kombiner ændringer med `merge`
+
+Vi står nu på branchen `lab5` og ønsker at integrere ændringerne fra branchen `lab2`. 
+
+> Men lad os lige se hvilke filer der er i folderen inden vi går i gang 
+```
+ls
+```
+Vi har to filer 
+
+    Mode                LastWriteTime         Length Name
+    ----                -------------         ------ ----
+    -a----       12-04-2019     02:12             36 mhf.txt
+    -a----       12-04-2019     01:57             16 mor.txt
+    
+    
+For at kombinere branches er det enkleste er at bruge kommandoen `merge`, der simplet hen kombinerer de to. 
+
+> Kør `git merge`
+
+Men **ak!**, git giver en fejlmeddelelse: 
+
+   Auto-merging mhf.txt
+   CONFLICT (content): Merge conflict in mhf.txt
+   Automatic merge failed; fix conflicts and then commit the result.
+
+
+Der var altså en forskel i `mhf.txt`, der ikke kunne løses og git beder os om at løse problemet selv. 
+
+Man er simpelt hen nød til at rette filen i hånden, men inden vi retter konflikten skal vi lige se indholdet i kataloget efter vi kørte merge: 
+
+    Mode                LastWriteTime         Length Name
+    ----                -------------         ------ ----
+    -a----       12-04-2019     02:15             19 29641657.txt
+    -a----       12-04-2019     02:15            116 mhf.txt
+    -a----       12-04-2019     01:57             16 mor.txt
+    
+    
+Vi kan se at telefonnummerfilen er kommet med over på den eksisterende branch og at filen `mor.txt` stadig ligger der. 
+
+Til gengæld er vi nød til at rette `mhf.txt` i hånden.
+
+<description><summary>Lad os se indholdet</summary>
+
+    Morten Hjorth Fæster
+    29641657
+    <<<<<<< HEAD
+    =======
+    Struenseegade 53, 3
+    2200 Kbh N
+    Oppossum
+    >>>>>>> lab2
+    
+Det er svært at læse - og et af de steder hvor man kan have god hjælp af nogle tools, men `<<<<<<< HEAD` betyder, at her starter indholdet fra vores aktuelle branch `lab5`. Alt efter linien med de mange lighedstegn og indtil `>>>>>>> lab2` viser hvad der står på branchen `lab2`. 
+
+</summary>
+
+> Ret filen i en editor, til du er tilfreds med indholdet. Dernæst skal filen tilføjes og vi skal comitte.  
+
+```
+ git add mhf.txt
+ git commit -m "Merged branch lab2"
+``` 
+
+<details><summary>Grafen har nu ændret sig, så `lab5` er en integration med `lab2`. </summary>
+
+             [merge lab2]- *lab5 \------
+                    |                   \-----------------
+                    |                                     |
+             [mor.txt og mhf.txt]-*master      [mhf.txt med adresse]-*lab2
+                    |                                     |
+                    -----------------------------[mhf.txt med tlf]
+                    |
+            [mhf.txt med navn]
+                    | 
+                 [init]
+
+</details>
+
+*kigger vi i folderen har vi alle tre filer.*
+
+
 
 [Tilbage til lab4](lab4.md)
 [Tilbage til oversigten](basics.md)
