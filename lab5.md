@@ -141,6 +141,7 @@ Forsøger `rebase` at klippe commits {2b, 3b} af, og afspille dem oven på {2a}.
 
 (Commits kan ikke flyttes, så selv om de principielt indeholder de samme ændringer, vil de få nye hashkoder.)
 
+Selv om rebase tit ser pæn ud, så kan det være noget mere besværligt at gennemføre, fordi hver enkel commit bliver forsøgt afspillet igen. Hvis man løser en konflikt under vejs ændrer comittet sig, og det efterfølgende commit kan på den måde få konflikter med sin tidligere parent. 
 
 
 [Tilbage til lab4](lab4.md)
