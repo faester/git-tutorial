@@ -3,10 +3,10 @@ Versionskontrol er ikke ret meget værd, hvis man ikke kan fortryde ændringer e
 
 De funktioner der handler om at fortryde rettelser i git, er følgende: 
 
-*revert* | Fortryder et helt commit.
-*checkout* | kan bruges til at tjekke en enkelt fil ud. (Men bruges normalt til at skifte branch.)
-*reset* | Kan bruges når man har ´add´'et en fil, men ikke ønsker den skal være en del af ens commit. Man kan også bruge *reset* til at fjerne rettelser i sit katalog. 
-*clean* | Er mere en oprydningskommando end en fortrydkommando. Fjerner *alle* filer, der ikke er versionskontrolleret af git. Farlig, men smart når man bygger fra kildekode og lignende.  
+| *revert* | Fortryder et helt commit. |
+| *checkout* | kan bruges til at tjekke en enkelt fil ud. (Men bruges normalt til at skifte branch.) |
+| *reset* | Kan bruges når man har ´add´'et en fil, men ikke ønsker den skal være en del af ens commit. Man kan også bruge *reset* til at fjerne rettelser i sit katalog.  |
+| *clean* | Er mere en oprydningskommando end en fortrydkommando. Fjerner *alle* filer, der ikke er versionskontrolleret af git. Farlig, men smart når man bygger fra kildekode og lignende.  |
 
 ## Revert 
 Revert kan bruges hvis man ønsker at fortryde en hel commit. Rettelsen fremgår samtidig klart af revisionshistorikken (git log). 
