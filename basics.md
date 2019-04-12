@@ -31,7 +31,7 @@ I git kan man som omtalt lave en såkaldt `branch`. Det er i praksis blot et nav
 
                              [ændring3]-*master,(head)    [parallelunivers]-dev
                                 |                                  |
-                             [ændring2]                      [eksperiment2]
+                             [ændring2]-'rel-1.1'            [eksperiment2]
                                 |                                  |
                              [ændring1]---------------- -----[eksperiment1]
                                 |
@@ -46,6 +46,12 @@ Men branches er også den primære kilde til frustrationer og `merge konflikter`
 Generelt er kortlevede branches en god ide. Branches der lever mere end et par dage er i reglen altid en kilde til problemer. 
 
 Det er normal praksis at man har een branch, der afspejler sin seneste release, og løbende arbejder i en anden branch. Man committer *aldrig* direkte til master. Men lige nu skal vi ikke dvæle ved den slags detaljer. 
+
+## tags - bogmærker
+Et tag ændrer sig ikke, men peger på et specifikt sted i revisionsgrafen. ('rel-1.1')
+
+## head 
+Den revision der aktuelt er basis for tilstanden i dit repository. (head)
 
 # Agenda - Lokale ændringer, individuelt brug af git 
 ## [Lav et repository og tilføj en fil](lab1.md)
