@@ -18,4 +18,4 @@ Det er Dirty Harry for git! **Alle ændringer i kataloget forsvinder og nulstill
 
 
 
-[Tilbage](lab3.md)
+[Tilbage](README.md)

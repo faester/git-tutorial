@@ -61,4 +61,4 @@ Hvis vil gøre vores tilbageføring af indholdet permanent skal vi `add`e og `co
 
 > `add` og `commit` så indholdet bliver reetableret.
 
-[Tilbage til lab3](lab3.md)
+[Tilbage til lab3](README.md)

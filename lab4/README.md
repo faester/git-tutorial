@@ -1,6 +1,6 @@
 # Lab 4 - Branches 
 
-Vi udførte [tidligere](lab2.md) kommandoen `git checkout -b lab2` uden at forklare ret meget. 
+Vi udførte [tidligere](../lab2/README.md) kommandoen `git checkout -b lab2` uden at forklare ret meget. 
 
 Igen skal vi udføre en kommando uden særlig meget forklaring, nemlig: 
 ```
@@ -81,5 +81,6 @@ Lige nu ser grafen omtrent sådan her ud:
 
 
 
-[Næste øvelse handler om at løse konflikter mellem branches i git](lab5.md)
-[Tilbage til oversigten](basics.md)
+[Næste øvelse handler om at løse konflikter mellem branches i git](../lab5/README.md)
+
+[Tilbage til oversigten](../basics.md)

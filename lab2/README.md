@@ -3,7 +3,7 @@ Vi har nu et git repository og en enkelt fil.
 
 Lad os prøve at rette i denne fil. 
 
-> Inden vi foretager os andet skal du dog lige udføre nedenstående kommando, som vi [forklarer senere](lab4.md).
+> Inden vi foretager os andet skal du dog lige udføre nedenstående kommando, som vi [forklarer senere](../lab4/README.md).
 
 ```
 git checkout -b lab2
@@ -197,5 +197,6 @@ git format-patch -1 717b3ce64422d2c5e5955d3
 ```
 
 
-[Næste øvelse](lab3.md)
-[Tilbage til oversigten](basics.md)
+[Næste øvelse](../lab3/README.md)
+
+[Tilbage til oversigten](../basics.md)

@@ -74,4 +74,4 @@ git revert 4520d85a6e80f5d9d03bf168d8a6dd361db297e9
 
 Filen skulle nu gerne være vendt tilbage. 
 
-[Tilbage](lab3.md)
+[Tilbage](README.md)

@@ -54,12 +54,12 @@ Et tag ændrer sig ikke, men peger på et specifikt sted i revisionsgrafen. ('re
 Den revision der aktuelt er basis for tilstanden i dit repository. (head)
 
 # Agenda - Lokale ændringer, individuelt brug af git 
-## [Lav et repository og tilføj en fil](lab1.md)
-## [Ret i filer, vis ændringer](lab2.md)
-## [Fortryd rettelser](lab3.md)
-## [Branches](lab4.md)
-## [Konflikter](lab5.md)
-## [Indbyggede værktøjer](lab6.md)
+## [Lav et repository og tilføj en fil](lab1/README.md)
+## [Ret i filer, vis ændringer](lab2/README.md)
+## [Fortryd rettelser](lab3/README.md)
+## [Branches](lab4/README.md)
+## [Konflikter](lab5/README.md)
+## [Indbyggede værktøjer](lab6/README.md)
 
 
 # Dag 2 - samarbejde

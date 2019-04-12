@@ -13,4 +13,4 @@ git clean -xdf
 
 Ovenstående fjerner alle ikke-versionsstyrede filer fra kataloget!
 
-[tilbage til lab3](lab3.md)
+[tilbage til lab3](README.md)
