@@ -70,5 +70,6 @@ Den revision der aktuelt er basis for tilstanden i dit repository. (head)
 ## Låsning af branches
 ## Forskellige `remote`s
 ## https eller ssh?
+## Commit-beskeder, rewrites af commits?
 
 Der er [en oversigt over basiskommandoer her](basic-commands.md)

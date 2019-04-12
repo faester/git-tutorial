@@ -9,6 +9,7 @@ Start et nyt repository. Alle filer under det aktuelle katalog bliver nu styret 
 ## add
 ## commit 
 ## rm 
+## mv 
 ## log 
 
 # Merge og rebase
