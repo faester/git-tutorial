@@ -50,7 +50,10 @@ Men vi kan også vælge at bede om at tilbageføre en konkret fil til fordums st
 git checkout head~1 -- <filnavn>
 ```
 
-Nu skulle filen gerne indeholde det sammme, som inden vores sidste commit. (`head~1` betyder faktisk 'forrige commit' og `--` fortæller vi kun vil lade det berøre en enkelt fil.)
+Nu skulle filen gerne indeholde det sammme, som inden vores sidste commit. 
+
+`head~1` betyder faktisk 'forrige commit' og `--` fortæller vi kun vil lade det berøre en enkelt fil.
+
 
 Bemærk at `git status` nu viser, at filen er ændret. 
 
