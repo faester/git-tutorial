@@ -60,3 +60,5 @@ Bemærk at `git status` nu viser, at filen er ændret.
 Hvis vil gøre vores tilbageføring af indholdet permanent skal vi `add`e og `commit`te.
 
 > `add` og `commit` så indholdet bliver reetableret.
+
+[Tilbage til lab3](lab3.md)
