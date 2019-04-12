@@ -68,5 +68,7 @@ Den revision der aktuelt er basis for tilstanden i dit repository. (head)
 ## Hvorfor bruger man webudgaver af git?
 ## Hvad er et pull-request
 ## Låsning af branches
+## Forskellige `remote`s
+## https eller ssh?
 
 Der er [en oversigt over basiskommandoer her](basic-commands.md)
