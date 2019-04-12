@@ -77,5 +77,5 @@ Det er helt ok hvis *wuhuu*-følelsen lader vente på sig, men nu har vi faktisk
 
 [Vi skal nu til at se lidt på hvad man kan bruge det til](../lab2/README.md)
 
-
+[Forsiden](../basics.md)
 
