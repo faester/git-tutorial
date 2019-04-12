@@ -105,6 +105,45 @@ Det er svært at læse - og et af de steder hvor man kan have god hjælp af nogl
 *kigger vi i folderen har vi alle tre filer.*
 
 
+## Kombiner ændringer med `rebase`
+
+Kommandoen rebase har samme formål som `merge`, altså at man kan kombinere to forskellige branches. Men den fungerer temmelig anderledes. Hvor `merge` ser på forskellene på de to branches når man beder om at merge, så forsøger `rebase` at finde det tidspunkt hvor de begyndte at afvige fra hinande, og tilføje alle ændringer i rækkefølge. Efter en merge kan man således stadig følge de forskellige branches i commit-grafen, men efter `rebase` kommer der et enstrenget commit-spor. Det er der mange der synes er ønskværdigt, fordi det på nogen punkter er lettere at følge med i ændringerne. 
+
+`rebase` fungerer sådan, at den finder den yngste fælles knude og bruger den som udgangspunkt. Så finder den toppen af den branch der bliver rebaset, og afspiller ændringer fra den aktuelle branch oven på denne. 
+
+
+Så hvis udgangspunktet er nedenstående, og man står `lab2`, og forsøger en rebase på `master`, vil git finde `1a` som fælles ancester, rykke videre til `2a` og efterfølgende afspille `2b` og `3b`. 
+
+
+             [2a: mor.txt og mhf.txt]-*master   [3b: mhf.txt med adresse]-*lab2
+                    |                                     |
+                    -----------------------------[2b: mhf.txt med tlf]
+                    |
+            [1a: mhf.txt med navn]
+                    | 
+                 [init]
+
+
+Forsøger `rebase` at klippe commits {2b, 3b} af, og afspille dem oven på {2a}. 
+
+
+
+        [3b1: mhf.txt med adresse]-*lab2
+                    |
+           [2b1: mhf.txt med tlf]
+                    |
+             [2a: mor.txt og mhf.txt]-*master 
+                    |
+            [1a: mhf.txt med navn]
+                    | 
+                 [init]
+
+
+(Commits kan ikke flyttes, så selv om de principielt indeholder de samme ændringer, vil de få nye hashkoder.)
+
+
 
 [Tilbage til lab4](lab4.md)
+
+
 [Tilbage til oversigten](basics.md)
