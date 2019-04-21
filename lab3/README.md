@@ -6,6 +6,7 @@ De funktioner der handler om at fortryde rettelser i git, er følgende:
 | Kommando | beskrivelse |
 | -------- | -------------------------- |
 | [*revert*](revert.md) | Fortryder et helt commit. |
+| [*stash*](stash.md) | Vender tilbage til `head` men gemmer rettelser i en stak, der ikke synkroniseres |
 | [*checkout*](checkout.md) | kan bruges til at tjekke en enkelt fil ud. (Men bruges normalt til at skifte branch.) |
 | [*reset*](reset.md) | Kan bruges når man har ´add´'et en fil, men ikke ønsker den skal være en del af ens commit. Man kan også bruge *reset* til at fjerne rettelser i sit katalog.  |
 | [*clean*](clean.md) | Er mere en oprydningskommando end en fortrydkommando. Fjerner *alle* filer, der ikke er versionskontrolleret af git. Farlig, men smart når man bygger fra kildekode og lignende.  |
